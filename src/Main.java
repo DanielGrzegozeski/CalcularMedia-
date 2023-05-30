@@ -1,5 +1,12 @@
-public class Main {
+import javax.swing.*;
+
+public class Main extends JFrame {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
-    }
-}
+
+        CalculadoraMedia form = new CalculadoraMedia();
+
+        form.setContentPane(form.calcularMedia);
+        form.setVisible(true);
+        form.setTitle("conversor");
+        form.setSize(300,500);
+    }}
